@@ -86,3 +86,19 @@ seasons.forEach((item)=>console.log(item))
 let num=[10,20,30]
 let doublenum=num.map(item=>item*2)
 console.log(doublenum)
+
+function calculate(num1, num2, operator) {
+    if (operator === '+') {
+        return num1 + num2;
+    } else if (operator === '-') {
+        return num1 - num2;
+    } else if (operator === '*') {
+        return num1 * num2;
+    } else if (operator === '/') {
+        return num1 / num2;
+    } else {
+        return 'Invalid operator';
+    }
+}
+
+console.log(calculate(5, 3, '+'));
